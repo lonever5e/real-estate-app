@@ -1,0 +1,76 @@
+@import "../../responsive.scss";
+
+.about {
+  display: flex;
+  height: 100%;
+  padding: 50px; // Add padding to the entire about section
+
+  .textContainer {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      height: 100%;
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 64px;
+
+        @include lg {
+          font-size: 48px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5; // Make text more readable
+        max-width: 600px; // Limit width for better readability
+        margin: 0 auto; // Center align text
+        text-align: center; // Center align text
+
+        @include lg {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 80%; // Set width to 80% for better sizing
+      max-width: 600px; // Maximum width
+      border-radius: 10px; // Rounded corners
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+      margin: 20px auto; // Center and add margin
+
+      @include lg {
+        width: 70%; // Adjust width for larger screens
+      }
+    }
+  }
+}

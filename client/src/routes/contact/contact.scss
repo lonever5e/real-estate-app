@@ -1,0 +1,133 @@
+@import "../../responsive.scss";
+
+.contactMe {
+  display: flex;
+  height: 100%;
+  padding: 50px; // Add padding to the entire contact section
+
+  .textContainer {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      height: 100%;
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 64px;
+
+        @include lg {
+          font-size: 48px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5; // Make text more readable
+        max-width: 600px; // Limit width for better readability
+        margin: 0 auto; // Center align text
+        text-align: center; // Center align text
+      }
+
+      .contactForm {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; // Space between form elements
+
+        input,
+        textarea {
+          padding: 15px; // Increased padding for better touch targets
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+
+          @include lg {
+            font-size: 14px;
+          }
+        }
+
+        button {
+          padding: 10px;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s ease; // Smooth transition effect
+
+          &:hover {
+            background-color: #2980b9; // Button hover effect
+          }
+
+          @include lg {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 80%; // Adjusted width for better presentation
+      max-width: 600px; // Maximum width
+      border-radius: 10px; // Rounded corners
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+      margin: 20px auto; // Center and add margin
+    }
+  }
+}
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  img {
+    width: 80%; // Adjust the width as needed
+    max-width: 600px; // Maximum width
+    border-radius: 10px; // Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    margin: 20px 0; // Space around the image
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px; // Max width for readability
+  }
+}

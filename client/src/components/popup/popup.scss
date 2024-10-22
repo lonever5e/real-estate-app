@@ -1,0 +1,327 @@
+// /* popup.scss */
+// .popup-overlay {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .popup-content {
+//   background-color: white;
+//   padding: 20px;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   position: relative;
+//   width: 400px;
+// }
+
+// .close-btn {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   background: none;
+//   border: none;
+//   font-size: 18px;
+//   cursor: pointer;
+// }
+
+
+// .popup {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.5); // Dimmed background effect
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1000; // Ensure it sits above everything else
+// }
+
+// .popup-content {
+//   background-color: white;
+//   padding: 20px;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   width: 500px;
+//   max-width: 80vw;
+//   max-height: 80vh;
+//   overflow-y: auto; // In case content exceeds height
+//   position: relative;
+// }
+
+// .close-btn {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   cursor: pointer;
+//   color: #333;
+// }
+
+
+// popup.scss
+
+// .popupOverlay {
+//   position: fixed; // Make sure the overlay covers the entire screen
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1000; // Ensure it appears above other elements
+// }
+
+// .popupContent {
+//   background-color: white;
+//   border-radius: 8px;
+//   padding: 20px;
+//   width: 80%; // Adjust width as needed
+//   max-width: 500px; // Maximum width for the popup
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// }
+
+// .closeButton {
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   cursor: pointer;
+//   position: absolute; // Position the close button
+//   top: 10px; // Adjust position
+//   right: 10px; // Adjust position
+// }
+
+// .popupResponse {
+//   margin-top: 40px; // Add some space between the close button and the response
+// }
+
+
+// popup.scss
+
+// .popupOverlay {
+//   position: fixed; 
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.7); // Slightly darker for better visibility
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1000; 
+// }
+
+// .popupContent {
+//   background-color: white;
+//   border-radius: 8px;
+//   padding: 20px;
+//   width: 90%; // Use percentage for responsiveness
+//   max-width: 600px; // Maximum width for larger screens
+//   max-height: 80vh; // Maximum height to fit the screen
+//   overflow-y: auto; // Enable scrolling if content exceeds max-height
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); // Slightly heavier shadow for depth
+//   position: relative; // Position relative for close button
+// }
+
+// .closeButton {
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   cursor: pointer;
+//   position: absolute; 
+//   top: 10px; 
+//   right: 10px; 
+// }
+
+// .popupResponse {
+//   margin-top: 40px; 
+//   max-height: 70vh; // Set a max-height for the response area
+//   overflow-y: auto; // Enable scrolling if response content exceeds max-height
+//   padding-right: 10px; // Add padding for scrollbar visibility
+// }
+
+
+// // popup.scss
+
+// .popupContent {
+//   background-color: white;
+//   border-radius: 8px;
+//   padding: 20px;
+//   width: 90%; 
+//   max-width: 600px; 
+//   max-height: 80vh; 
+//   overflow-y: auto; 
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+//   position: relative; 
+//   font-family: Arial, sans-serif; // Choose a clean, readable font
+//   color: #333; // Darker text for better contrast
+// }
+
+// .popupResponse {
+//   margin-top: 40px; 
+//   max-height: 70vh; 
+//   overflow-y: auto; 
+//   padding-right: 10px; 
+//   line-height: 1.6; // Increased line height for better readability
+//   font-size: 16px; // Slightly larger font size
+// }
+
+// h2, h3, h4 { 
+//   margin-top: 20px; 
+//   margin-bottom: 10px; 
+//   color: #444; // Softer color for headings
+// }
+
+// p {
+//   margin-bottom: 15px; // Space between paragraphs
+//   text-align: justify; // Justify text for a cleaner look
+// }
+
+// // Optional: Add styles for links if applicable
+// a {
+//   color: #007bff; // Link color
+//   text-decoration: none; // No underline for links
+// }
+
+// a:hover {
+//   text-decoration: underline; // Underline on hover for links
+// }
+
+
+// ######################################################################################################
+
+// .popupOverlay {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1000; // Adjust z-index if needed
+// }
+
+// .popupContent {
+//   background: white;
+//   padding: 20px;
+//   border-radius: 8px;
+//   width: 80%; // Adjust width as needed
+//   max-width: 600px; // Maximum width
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .closeButton {
+//   background: transparent;
+//   border: none;
+//   font-size: 24px;
+//   position: absolute;
+//   top: 10px;
+//   right: 15px;
+//   cursor: pointer;
+// }
+
+// .popupResponse {
+//   max-height: 400px; // Adjust max height as needed
+//   overflow-y: auto; // Allow scrolling
+// }
+
+// .loader {
+//   border: 4px solid #f3f3f3; /* Light grey */
+//   border-top: 4px solid #3498db; /* Blue */
+//   border-radius: 50%;
+//   width: 50px; /* Size of the loader */
+//   height: 50px; /* Size of the loader */
+//   animation: spin 1s linear infinite; /* Animation */
+//   margin: auto; /* Center loader */
+// }
+
+// @keyframes spin {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(360deg); }
+// }
+
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Adjust z-index if needed
+}
+
+.popupContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%; // Adjust width as needed
+  max-width: 600px; // Maximum width
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.popupResponse {
+  max-height: 400px; // Adjust max height as needed
+  overflow-y: auto; // Allow scrolling
+  font-family: 'Arial', sans-serif; // Change font family as needed
+  line-height: 1.6; // Improved line height for readability
+  color: #333; // Darker text color for contrast
+  font-size: 16px; // Base font size
+  padding: 10px; // Add some padding around the text
+
+  // Add some styles for paragraphs
+  p {
+    margin: 0 0 15px; // Margin for paragraphs
+  }
+
+  // Add styles for headings
+  h1, h2, h3 {
+    margin: 0 0 10px; // Margin for headings
+    font-weight: bold; // Bold headings
+    color: #2c3e50; // Darker color for headings
+  }
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px; /* Size of the loader */
+  height: 50px; /* Size of the loader */
+  animation: spin 1s linear infinite; /* Animation */
+  margin: auto; /* Center loader */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
