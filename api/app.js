@@ -24,6 +24,9 @@ app.use("/api/test", testRoute);
 app.use("/api/chats", chatRoute);
 app.use("/api/messages", messageRoute);
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
 
 app.post("/api/chatbot", (req, res) => {
   const { message } = req.body;  // The message sent by the user
